@@ -36,7 +36,7 @@ function askGistDetails() {
         {
             type: 'input',
             name: 'filename',
-            message: 'Enter a filename',
+            message: 'Enter a filename for the gist (including extension) : ',
             validate: function (value) {
                 if (value.length) {
                     return true;
