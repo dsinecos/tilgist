@@ -60,8 +60,7 @@ async function createCLIGist(filename, content, description) {
 
     try {
         let gistUrl = await gist.createGist(filename, content, description, private);
-        console.log("Gist created");
-        console.log(gistUrl);
+        console.log("Gist created @ ", gistUrl);
     } catch (err) {
         console.log(err);
     }
@@ -80,8 +79,7 @@ async function createEditorGist() {
 
     try {
         let gistUrl = await gist.createGist(gistData.filename, gistData.content, gistData.description, private);
-        console.log("Gist created");
-        console.log(gistUrl);
+        console.log("Gist created @ ", gistUrl);
     } catch (err) {
         console.log(err)
     }
