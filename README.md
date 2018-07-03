@@ -31,4 +31,6 @@ When you run the CLI tool the first time, tilgist generates an OAuth token to co
 
 The OAuth token is stored locally on your machine using the npm library [configstore](https://www.npmjs.com/package/configstore)
 
+The access for the OAuth token is limited creating gists
+
 
