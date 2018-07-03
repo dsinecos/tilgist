@@ -25,7 +25,7 @@ tilnotes
 
 tilnotes
     .command('open')
-    .description('add content for the gist using a terminal editor')
+    .description('add content for the gist using a terminal editor. The editor can be specified using the `-e` or `--editor` flag. If no editor is specified, the editor to use is determined by reading the $VISUAL or $EDITOR environment variables. If neither of those are present, notepad (on Windows) or vim (Linux or Mac) is used.')
     .action(createEditorGist)
 
 tilnotes.parse(process.argv);
@@ -74,7 +74,18 @@ async function createEditorGist() {
         process.env.EDITOR = "nano";
     }
 
-    let gistData = await inquirer.askGistDetails();
+    console.log("Inside createEditorGist");
+
+    try {
+        console.log("Inside try block");
+        var gistData = await inquirer.askGistDetails();
+        console.log("Got the gist details");
+        console.log(JSON.stringify(gistData, null, "  "));
+    } catch (err) {
+        console.log("Inside error");
+        console.log(err);
+    }
+
     let private = Boolean(tilnotes.private);
 
     try {
