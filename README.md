@@ -2,6 +2,8 @@
 
 TILGist is a command line tool to aid collecting your daily snippets of learning on Github as gists
 
+![](assets/tilgist.png)
+
 ## Getting Started
 
 ### Prerequisites
