@@ -13,7 +13,7 @@ const tilnotes = require('commander');
 
 console.log(
     chalk.yellow(
-        figlet.textSync('TILNotes', { horizontalLayout: 'full' })
+        figlet.textSync('TILGist', { horizontalLayout: 'full' })
     )
 );
 
