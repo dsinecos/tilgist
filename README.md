@@ -12,9 +12,13 @@ TILGist is a command line tool to aid collecting your daily snippets of learning
 
 ### Setup Instructions
 1. Clone the repo
-2. Run `npm install`
-3. Run `npm link` or `sudo npm link`
-4. Run `tilgist` to get instructions on how to use the CLI tool
+2. Run `./setup.sh`
+
+##### OR
+
+1. Run `npm install`
+2. Run `npm link` or `sudo npm link`
+3. Run `tilgist` to get instructions on how to use the CLI tool
 
 ## Usage Examples
 
